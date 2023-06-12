@@ -48,6 +48,11 @@ func main() {
 	}
 	fmt.Println("===================================")
 
-	fmt.Printf("names = %v type(%T)\n", names, names)
+	// Append
+	names = append(names, "mahmud")
+	test := append(names, "zahra")
+	fmt.Println(names)
+	fmt.Println(test)
+	fmt.Println("===================================")
 
 }
