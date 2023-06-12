@@ -35,6 +35,7 @@ func main() {
 
 func SwitchStatment() {
 	x := 2
+	y := 5
 
 	switch x {
 	case 1:
@@ -45,5 +46,14 @@ func SwitchStatment() {
 		fmt.Println("three")
 	default:
 		fmt.Println("many")
+	}
+
+	switch {
+	case x > 3:
+		fmt.Println("x is greater than 3")
+	case y > 3:
+		fmt.Println("y is greater than 3")
+	case x < 3:
+		fmt.Println("x is lester than 3")
 	}
 }
