@@ -2,7 +2,7 @@ package main
 
 import (
 	// strutils "GoLang/pakages"
-	"GoLang/pakages"
+	"GoLang/packages"
 	"fmt"
 )
 
