@@ -12,6 +12,9 @@ func main() {
 	x := 2
 	y := 1
 
+	const test = "sajjad"
+
+
 	fmt.Printf("x = %v, type of %T\n", x, x)
 	fmt.Printf("y = %v, type of %T\n", y, y)
 
@@ -22,4 +25,6 @@ func main() {
 	mean = float64(x+y) / 2.0
 
 	fmt.Printf("mean = %v, type of %T\n", mean, mean)
+	fmt.Printf("test = %v, type of %T\n", test, test)
+
 }
