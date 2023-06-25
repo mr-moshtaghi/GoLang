@@ -19,7 +19,11 @@ func (s fake3)string3() string {
 }
 
 func printing(val interface{}) {
-	fmt.Println(val.(test).string3())
+	//fmt.Println(val.(test).string3())
+	result, ok := val.(test)
+	if ok{
+		fmt.Println(result.string3())
+	}
 }
 
 type test interface {
