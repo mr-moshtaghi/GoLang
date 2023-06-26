@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-func main(){
-	for i:=0; i<5; i++{
+func main() {
+	for i := 0; i < 5; i++ {
 		fmt.Println(i)
 	}
 
 	fmt.Println("==========================================")
 
-	for i:=0; i<5; i++{
-		if i == 3{
+	for i := 0; i < 5; i++ {
+		if i == 3 {
 			break
 		}
 		fmt.Println(i)
@@ -18,8 +18,8 @@ func main(){
 
 	fmt.Println("==========================================")
 
-	for i:=0; i<5; i++{
-		if i == 3{
+	for i := 0; i < 5; i++ {
+		if i == 3 {
 			continue
 		}
 		fmt.Println(i)
@@ -27,10 +27,17 @@ func main(){
 
 	fmt.Println("=========================================")
 
-	a:=0
+	a := 0
 
-	for a<5{
+	for a < 5 {
 		fmt.Println(a)
 		a++
 	}
+
+	// unlimited
+	//b := 0
+	//for {
+	//	fmt.Println(b)
+	//	b += 1
+	//}
 }

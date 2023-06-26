@@ -37,17 +37,21 @@ func SwitchStatment() {
 	x := 2
 	y := 5
 
+	// automatically break
+
 	switch x {
 	case 1:
 		fmt.Println("one")
 	case 2:
 		fmt.Println("two")
+		x = 3
 	case 3:
 		fmt.Println("three")
 	default:
 		fmt.Println("many")
 	}
 
+	// automatically break
 	switch {
 	case x > 3:
 		fmt.Println("x is greater than 3")
@@ -55,5 +59,29 @@ func SwitchStatment() {
 		fmt.Println("y is greater than 3")
 	case x < 3:
 		fmt.Println("x is lester than 3")
+	}
+
+	n := 3
+	switch n {
+	case 1:
+		fmt.Println("one")
+		fallthrough
+	case 2:
+		fmt.Println("two")
+		fallthrough
+	case 3:
+		fmt.Println("three")
+		fallthrough
+	case 4:
+		fmt.Println("four")
+		fallthrough
+	case 5:
+		fmt.Println("five")
+		fallthrough
+	case 6:
+		fmt.Println("six")
+		fallthrough
+	default:
+		fmt.Println("number")
 	}
 }
